@@ -7,10 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97E19F8826F60B610095FBBD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 97E19F8726F60B610095FBBD /* main.c */; };
+		9755F12E26F6208E00B1EB0E /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E19F9226F612D30095FBBD /* SDL2.framework */; };
+		9755F12F26F6208E00B1EB0E /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97E19F9226F612D30095FBBD /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9755F13126F6214000B1EB0E /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E19F9726F612F00095FBBD /* SDL2_image.framework */; };
+		9755F13226F6214000B1EB0E /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97E19F9726F612F00095FBBD /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9755F13826F6372D00B1EB0E /* basic_windows.c in Sources */ = {isa = PBXBuildFile; fileRef = 9755F13726F6372D00B1EB0E /* basic_windows.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9755F13026F6208F00B1EB0E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9755F12F26F6208E00B1EB0E /* SDL2.framework in Embed Frameworks */,
+				9755F13226F6214000B1EB0E /* SDL2_image.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97E19F8226F60B610095FBBD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,8 +39,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		97E19F8426F60B610095FBBD /* SDL Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SDL Test"; sourceTree = BUILT_PRODUCTS_DIR; };
-		97E19F8726F60B610095FBBD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		9755F13626F6372D00B1EB0E /* basic_windows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basic_windows.h; sourceTree = "<group>"; };
+		9755F13726F6372D00B1EB0E /* basic_windows.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = basic_windows.c; sourceTree = "<group>"; };
+		97E19F8426F60B610095FBBD /* Game42 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Game42; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E19F9126F6124B0095FBBD /* Applications */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Applications; path = ../../Applications; sourceTree = "<group>"; };
+		97E19F9226F612D30095FBBD /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../devplace/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		97E19F9726F612F00095FBBD /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../devplace/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9755F12E26F6208E00B1EB0E /* SDL2.framework in Frameworks */,
+				9755F13126F6214000B1EB0E /* SDL2_image.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,45 +63,58 @@
 		97E19F7B26F60B610095FBBD = {
 			isa = PBXGroup;
 			children = (
-				97E19F8626F60B610095FBBD /* SDL Test */,
+				97E19F8626F60B610095FBBD /* game */,
 				97E19F8526F60B610095FBBD /* Products */,
+				97E19F9026F6124B0095FBBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		97E19F8526F60B610095FBBD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				97E19F8426F60B610095FBBD /* SDL Test */,
+				97E19F8426F60B610095FBBD /* Game42 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		97E19F8626F60B610095FBBD /* SDL Test */ = {
+		97E19F8626F60B610095FBBD /* game */ = {
 			isa = PBXGroup;
 			children = (
-				97E19F8726F60B610095FBBD /* main.c */,
+				9755F13626F6372D00B1EB0E /* basic_windows.h */,
+				9755F13726F6372D00B1EB0E /* basic_windows.c */,
 			);
-			path = "SDL Test";
+			path = game;
+			sourceTree = "<group>";
+		};
+		97E19F9026F6124B0095FBBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97E19F9726F612F00095FBBD /* SDL2_image.framework */,
+				97E19F9226F612D30095FBBD /* SDL2.framework */,
+				97E19F9126F6124B0095FBBD /* Applications */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		97E19F8326F60B610095FBBD /* SDL Test */ = {
+		97E19F8326F60B610095FBBD /* Game42 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97E19F8B26F60B610095FBBD /* Build configuration list for PBXNativeTarget "SDL Test" */;
+			buildConfigurationList = 97E19F8B26F60B610095FBBD /* Build configuration list for PBXNativeTarget "Game42" */;
 			buildPhases = (
 				97E19F8026F60B610095FBBD /* Sources */,
 				97E19F8126F60B610095FBBD /* Frameworks */,
 				97E19F8226F60B610095FBBD /* CopyFiles */,
+				9755F13026F6208F00B1EB0E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "SDL Test";
+			name = Game42;
 			productName = "SDL Test";
-			productReference = 97E19F8426F60B610095FBBD /* SDL Test */;
+			productReference = 97E19F8426F60B610095FBBD /* Game42 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 97E19F7F26F60B610095FBBD /* Build configuration list for PBXProject "SDL Test" */;
+			buildConfigurationList = 97E19F7F26F60B610095FBBD /* Build configuration list for PBXProject "Game42" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				97E19F8326F60B610095FBBD /* SDL Test */,
+				97E19F8326F60B610095FBBD /* Game42 */,
 			);
 		};
 /* End PBXProject section */
@@ -118,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97E19F8826F60B610095FBBD /* main.c in Sources */,
+				9755F13826F6372D00B1EB0E /* basic_windows.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +275,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = /Users/aborst/Library/Frameworks;
+				HEADER_SEARCH_PATHS = (
+					/Users/aborst/Library/Frameworks/SDL2_image.framework/Headers,
+					/Users/aborst/Library/Frameworks/SDL2.framework/Headers,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +288,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = /Users/aborst/Library/Frameworks;
+				HEADER_SEARCH_PATHS = (
+					/Users/aborst/Library/Frameworks/SDL2_image.framework/Headers,
+					/Users/aborst/Library/Frameworks/SDL2.framework/Headers,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -255,7 +300,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		97E19F7F26F60B610095FBBD /* Build configuration list for PBXProject "SDL Test" */ = {
+		97E19F7F26F60B610095FBBD /* Build configuration list for PBXProject "Game42" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97E19F8926F60B610095FBBD /* Debug */,
@@ -264,7 +309,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97E19F8B26F60B610095FBBD /* Build configuration list for PBXNativeTarget "SDL Test" */ = {
+		97E19F8B26F60B610095FBBD /* Build configuration list for PBXNativeTarget "Game42" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97E19F8C26F60B610095FBBD /* Debug */,
