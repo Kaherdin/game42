@@ -11,7 +11,7 @@
 		3F3A93AC26F63BAF0045EBD5 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3A93AA26F63BAF0045EBD5 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F3A93AF26F63BB70045EBD5 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3A93AE26F63BB70045EBD5 /* SDL2.framework */; };
 		3F3A93B026F63BB70045EBD5 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3A93AE26F63BB70045EBD5 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3F3A93B626F63D600045EBD5 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A93B526F63D600045EBD5 /* test.c */; };
+		3F3A93B626F63D600045EBD5 /* 1fenetrenon_visible.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A93B526F63D600045EBD5 /* 1fenetrenon_visible.c */; };
 		9755F13826F6372D00B1EB0E /* basic_windows.c in Sources */ = {isa = PBXBuildFile; fileRef = 9755F13726F6372D00B1EB0E /* basic_windows.c */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +43,7 @@
 		3F3A93AA26F63BAF0045EBD5 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 		3F3A93AE26F63BB70045EBD5 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		3F3A93B426F63D600045EBD5 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
-		3F3A93B526F63D600045EBD5 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		3F3A93B526F63D600045EBD5 /* 1fenetrenon_visible.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 1fenetrenon_visible.c; sourceTree = "<group>"; };
 		3F3A93B726F63E6C0045EBD5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9755F13626F6372D00B1EB0E /* basic_windows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basic_windows.h; sourceTree = "<group>"; };
 		9755F13726F6372D00B1EB0E /* basic_windows.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = basic_windows.c; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				9755F13626F6372D00B1EB0E /* basic_windows.h */,
 				9755F13726F6372D00B1EB0E /* basic_windows.c */,
 				3F3A93B426F63D600045EBD5 /* test.h */,
-				3F3A93B526F63D600045EBD5 /* test.c */,
+				3F3A93B526F63D600045EBD5 /* 1fenetrenon_visible.c */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9755F13826F6372D00B1EB0E /* basic_windows.c in Sources */,
-				3F3A93B626F63D600045EBD5 /* test.c in Sources */,
+				3F3A93B626F63D600045EBD5 /* 1fenetrenon_visible.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

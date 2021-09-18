@@ -32,6 +32,8 @@ int main(int argc, char *argv[])
     SDL_Delay(3000);
     SDL_DestroyWindow(window);
     SDL_DestroyWindow(window2);
+    SDL_Delay(3000);
+    SDL_DestroyWindow(window);
     SDL_Quit();
     return EXIT_SUCCESS;
 }
