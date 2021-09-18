@@ -7,22 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9755F12E26F6208E00B1EB0E /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E19F9226F612D30095FBBD /* SDL2.framework */; };
-		9755F12F26F6208E00B1EB0E /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97E19F9226F612D30095FBBD /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9755F13126F6214000B1EB0E /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E19F9726F612F00095FBBD /* SDL2_image.framework */; };
-		9755F13226F6214000B1EB0E /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97E19F9726F612F00095FBBD /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F3A93AB26F63BAF0045EBD5 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3A93AA26F63BAF0045EBD5 /* SDL2_image.framework */; };
+		3F3A93AC26F63BAF0045EBD5 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3A93AA26F63BAF0045EBD5 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F3A93AF26F63BB70045EBD5 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3A93AE26F63BB70045EBD5 /* SDL2.framework */; };
+		3F3A93B026F63BB70045EBD5 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3A93AE26F63BB70045EBD5 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F3A93B626F63D600045EBD5 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A93B526F63D600045EBD5 /* test.c */; };
 		9755F13826F6372D00B1EB0E /* basic_windows.c in Sources */ = {isa = PBXBuildFile; fileRef = 9755F13726F6372D00B1EB0E /* basic_windows.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9755F13026F6208F00B1EB0E /* Embed Frameworks */ = {
+		3F3A93AD26F63BAF0045EBD5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9755F12F26F6208E00B1EB0E /* SDL2.framework in Embed Frameworks */,
-				9755F13226F6214000B1EB0E /* SDL2_image.framework in Embed Frameworks */,
+				3F3A93AC26F63BAF0045EBD5 /* SDL2_image.framework in Embed Frameworks */,
+				3F3A93B026F63BB70045EBD5 /* SDL2.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +40,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F3A93AA26F63BAF0045EBD5 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		3F3A93AE26F63BB70045EBD5 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		3F3A93B426F63D600045EBD5 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		3F3A93B526F63D600045EBD5 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		3F3A93B726F63E6C0045EBD5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9755F13626F6372D00B1EB0E /* basic_windows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basic_windows.h; sourceTree = "<group>"; };
 		9755F13726F6372D00B1EB0E /* basic_windows.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = basic_windows.c; sourceTree = "<group>"; };
 		97E19F8426F60B610095FBBD /* Game42 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Game42; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,8 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9755F12E26F6208E00B1EB0E /* SDL2.framework in Frameworks */,
-				9755F13126F6214000B1EB0E /* SDL2_image.framework in Frameworks */,
+				3F3A93AB26F63BAF0045EBD5 /* SDL2_image.framework in Frameworks */,
+				3F3A93AF26F63BB70045EBD5 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		97E19F7B26F60B610095FBBD = {
 			isa = PBXGroup;
 			children = (
+				3F3A93B726F63E6C0045EBD5 /* .gitignore */,
 				97E19F8626F60B610095FBBD /* game */,
 				97E19F8526F60B610095FBBD /* Products */,
 				97E19F9026F6124B0095FBBD /* Frameworks */,
@@ -82,6 +89,8 @@
 			children = (
 				9755F13626F6372D00B1EB0E /* basic_windows.h */,
 				9755F13726F6372D00B1EB0E /* basic_windows.c */,
+				3F3A93B426F63D600045EBD5 /* test.h */,
+				3F3A93B526F63D600045EBD5 /* test.c */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -89,7 +98,9 @@
 		97E19F9026F6124B0095FBBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F3A93AE26F63BB70045EBD5 /* SDL2.framework */,
 				97E19F9726F612F00095FBBD /* SDL2_image.framework */,
+				3F3A93AA26F63BAF0045EBD5 /* SDL2_image.framework */,
 				97E19F9226F612D30095FBBD /* SDL2.framework */,
 				97E19F9126F6124B0095FBBD /* Applications */,
 			);
@@ -106,7 +117,7 @@
 				97E19F8026F60B610095FBBD /* Sources */,
 				97E19F8126F60B610095FBBD /* Frameworks */,
 				97E19F8226F60B610095FBBD /* CopyFiles */,
-				9755F13026F6208F00B1EB0E /* Embed Frameworks */,
+				3F3A93AD26F63BAF0045EBD5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9755F13826F6372D00B1EB0E /* basic_windows.c in Sources */,
+				3F3A93B626F63D600045EBD5 /* test.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +287,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = /Users/aborst/Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = "/Users/dndoum-b/Documents/game/Frameworks";
 				HEADER_SEARCH_PATHS = (
-					/Users/aborst/Library/Frameworks/SDL2_image.framework/Headers,
-					/Users/aborst/Library/Frameworks/SDL2.framework/Headers,
+					"/Users/dndoum-b/Documents/game/Frameworks/SDL2_image.framework/Headers",
+					"/Users/dndoum-b/Documents/game/Frameworks/SDL2.framework/Headers",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -288,10 +300,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = /Users/aborst/Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = "/Users/dndoum-b/Documents/game/Frameworks";
 				HEADER_SEARCH_PATHS = (
-					/Users/aborst/Library/Frameworks/SDL2_image.framework/Headers,
-					/Users/aborst/Library/Frameworks/SDL2.framework/Headers,
+					"/Users/dndoum-b/Documents/game/Frameworks/SDL2_image.framework/Headers",
+					"/Users/dndoum-b/Documents/game/Frameworks/SDL2.framework/Headers",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

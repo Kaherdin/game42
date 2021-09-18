@@ -7,7 +7,7 @@
 
 #include "basic_windows.h"
 
-int main(int argc, char *argv[])
+/*int main(int argc, char *argv[])
 {
     SDL_Window *window = NULL;
     if(0 != SDL_Init(SDL_INIT_VIDEO))
@@ -26,4 +26,4 @@ int main(int argc, char *argv[])
     SDL_DestroyWindow(window);
     SDL_Quit();
     return EXIT_SUCCESS;
-}
+}*/

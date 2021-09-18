@@ -10,7 +10,6 @@
 
 #include <stdio.h>
 #include <SDL.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 #endif /* basic_windows_h */
